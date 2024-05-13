@@ -14,8 +14,8 @@ form.addEventListener("submit", function (event) {
     const age = parseInt(document.getElementById("age").value);
 
     //CHECK VARIABILI INPUT
-    /*if (isNaN(km) || isNaN(age))
-        location.reload(); // RICARICO LA PAGINA SE I VALORI NON SONO CORRETTI*/
+    if (isNaN(km) || isNaN(age))
+        location.reload(); //RICARICO LA PAGINA SE I VALORI NON SONO CORRETTI*/
 
-    console.log("KM ---> " + km + "/// AGE ---> " + age);
+    console.log("KM ---> " + typeof (km) + "/// AGE ---> " + typeof (age)); //STAMPA DI DEBUG
 });
