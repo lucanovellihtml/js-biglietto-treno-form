@@ -30,7 +30,13 @@ form.addEventListener("submit", function (event) {
     const km = parseFloat(document.getElementById("kilometers").value);
     const age = parseInt(document.getElementById("age").value);
 
+    //SOSTITUZIONE DEL CONTENUTO DEI PARAGRAFI HTML, CON RIMOZIONE DELLA CLASSE DISPLAY NONE NEL CONTAINER PRICE
+    let container_price = document.getElementById("container_price").classList.remove("d-none");
+    let age_ticket = document.getElementById("age_ticket").innerHTML = "Età selezionata: " + age + " anni";
+    let km_ticket = document.getElementById("km_ticket").innerHTML = "Chilometri selezionati: " + km + " km";
 
+
+    //DEFINIZIONE VARIABILE PREZZO DEL TICKET
     let price_ticket = document.getElementById("price_ticket");
 
     if (age < 18)
