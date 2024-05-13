@@ -1,7 +1,6 @@
 "use strict";
 
-//DEFINIZIONE VARIABILE BOTTONE FORM
-const button = document.getElementById("button");
+//DEFINIZIONE VARIABILE FORM
 const form = document.getElementById("form");
 
 //METODO ACQUSIZIONE PARAMETRI FORM
