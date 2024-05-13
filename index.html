@@ -30,19 +30,37 @@
 
     <main>
 
-        <form action="" class="container" id="form">
-            <div class="my-3">
-                <label for="inputKm" class="form-label">Numero di km:</label>
-                <input type="text" class="form-control" id="kilometers"
-                    placeholder="Inserisci il numero di km da percorrere">
+        <!-- CONTAINER FORM -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form action="" id="form">
+                        <div class="my-3">
+                            <label for="inputKm" class="form-label">Numero di km:</label>
+                            <input type="text" class="form-control" id="kilometers"
+                                placeholder="Inserisci il numero di km da percorrere">
+                        </div>
+                        <div class="my-5">
+                            <label for="inputAge" class="form-label">Età del passeggero:</label>
+                            <input type="text" class="form-control" id="age"
+                                placeholder="Inserisci l'età del passeggero">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="button">Calcola</button>
+                    </form>
+                </div>
             </div>
-            <div class="my-5">
-                <label for="inputAge" class="form-label">Età del passeggero:</label>
-                <input type="text" class="form-control" id="age" placeholder="Inserisci l'età del passeggero">
-            </div>
-            <button type="submit" class="btn btn-primary" id="button">Calcola</button>
-        </form>
+        </div>
 
+
+        <!-- CONTAINER RISPOSTA -->
+        <div class="container">
+            <div class="row">
+                <div class="col text-center my-5">
+                    <h1 class="text-uppercase fw-bolder">RISULTATO</h1>
+                    <p class="mt-5" id="price_ticket">Calcolo del prezzo, attendere...</p>
+                </div>
+            </div>
+        </div>
     </main>
 
 
